@@ -1,0 +1,22 @@
+<div class="wrapper" style="padding-top: 100px;
+    display: inline-block;
+    position: relative;
+    margin: 0px;">
+
+  <div class="jumbotron">
+    <% if current_user %>
+        <p>Welcome <%= current_user.name %></p>
+        <%= image_tag(@auth['info']['image'], width: '50', height: '50') %>
+        <%= link_to 'Sign out', sign_out_path, method: :delete %>
+    <% else %>
+        <h3>Login</h3>
+        <a href="auth/twitter" class="btn btn-default btn-md">
+          Twitter
+        </a>
+        <a href="auth/github" class="btn btn-default btn-md">
+          Github
+        </a>
+    <% end %>
+  </div>
+
+</div>
