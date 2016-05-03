@@ -1,4 +1,6 @@
-== README
+This is just a very basic third party authentication with a pupular social network Twitter and another one Github using Opensource Language Ruby on Rails framework working together with Gem Omniauth. Please see other dependencies (Gem) in the Gemfile.rb
+
+== RDOC README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
